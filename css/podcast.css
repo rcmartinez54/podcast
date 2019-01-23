@@ -18,14 +18,21 @@ header {
 
 nav ul {
 	text-align: center;
+	float: right;
 }
 
 nav ul li {
 	font-family: 'Ruda', Sans-Serif;
-	font-size: 48px;
+	font-size: 30px;
 	display: inline-block;
 	text-decoration: none;
 	padding: 30px;
+	text-transform: uppercase;
+}
+
+nav ul li:hover {
+	color: #fff;
+	transition: all 1s;
 }
 
 #hero {
