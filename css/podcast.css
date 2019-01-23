@@ -14,16 +14,36 @@ header {
 	left: 0;
 	background: rgba(255, 255, 255, 0.5);
 	width: 100%;
+	font-family: 'Ruda', Sans-Serif;
+	font-size: 30px;
+}
+
+header .logo {
+	display: inline-block;
+	float: left;
+	width: 40%;
+	padding: 20px;
+}
+
+header .logo img {
+	width: 30%;
+	float: left;
+}
+
+header .logo h1 {
+	padding: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 34px;
 }
 
 nav ul {
 	text-align: center;
 	float: right;
+	padding-top: 20px;
 }
 
 nav ul li {
-	font-family: 'Ruda', Sans-Serif;
-	font-size: 30px;
 	display: inline-block;
 	text-decoration: none;
 	padding: 30px;
@@ -51,4 +71,31 @@ nav ul li:hover {
 	background: url('../img/hand.jpeg') no-repeat;
 	background-size: cover;
 	height: 80vh;
+}
+
+#two {
+	// height: 70vh;
+	background: #000;
+	border-top: 1px solid #fff;
+}
+
+#two .left {
+	float: left;
+	width: 48%;
+	background: url('../img/mural.jpeg') no-repeat;
+	background-size: cover;
+	height: 70vh;
+}
+
+#two .right {
+	float: right;
+	width: 50%;
+	background: url('../img/doors.jpeg') no-repeat;
+	background-size: cover;
+	height: 70vh;
+}
+
+footer {
+	height: 50vh;
+	background: rgba(0, 255, 255, 0.5)
 }
