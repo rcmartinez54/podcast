@@ -69,7 +69,7 @@ nav ul li:hover {
 }
 
 #one {
-	background: url('../img/hand.jpeg') no-repeat;
+	background: url('../img/hand.jpeg') fixed;
 	background-size: cover;
 	height: 80vh;
 }
