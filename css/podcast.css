@@ -64,8 +64,13 @@ nav ul li:hover {
 
 #banner_one, 
 #banner_two {
+	font-family: 'Ruda', Sans-Serif;
 	background: #000;
-	height: 40vh;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 42px;
+	padding: 50px 0px;
 }
 
 #one {
@@ -98,6 +103,7 @@ nav ul li:hover {
 
 footer {
 	font-family: 'Ruda', Sans-Serif;
+	border-top: 1px solid #fff;
 }
 
 footer .top {
