@@ -120,6 +120,11 @@ nav ul li:hover {
 	padding: 50px 0px;
 }
 
+#banner_one p,
+#banner_two p {
+	display: none;
+}
+
 #one {
 	background: url('../img/hand.jpeg') fixed;
 	background-size: cover;
