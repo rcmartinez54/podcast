@@ -24,6 +24,10 @@ $(document).ready(function() {
 		} else {
 			$(".hamburger span").removeClass('scroll');
 		}
+
+		if($(document).scrollTop() > 400) {
+			$("#banner_one p").fadeIn(500);
+		}
 	});
 
 });				
