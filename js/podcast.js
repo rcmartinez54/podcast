@@ -47,7 +47,7 @@ $(document).ready(function() {
 				photoHTML += '<img src"' + photo.media.m + '"></a></li>';
 			});
 			photoHTML += '</ul>';
-			$('#photos').html(photoHTML);
+			$('#pics').html(photoHTML);
 		}
 		$.getJSON(flickrAPI, flickrOptions, displayPhotos);
 	});
