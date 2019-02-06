@@ -2,17 +2,31 @@
 	
 }
 
+html {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+a {
+	text-decoration: none;
+}
+
 .clearfix::after {
 	content: "";
 	clear: both;
 	display: table;
 }
 
+.small-font {
+	font-family: 'Poppins', Sans-Serif;
+	font-size: 14px;
+}
+
 header {
+	// display: flex;
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: rgba(255, 255, 255, 0.5);
+	background: transparent;
 	width: 100%;
 	font-family: 'Ruda', Sans-Serif;
 	font-size: 30px;
@@ -36,11 +50,28 @@ header .logo h1 {
 	font-size: 34px;
 }
 
-nav ul {
+.open-menu {
+	right: 0;
+}
+
+.ham-open {
+	margin-right: 200px;
+}
+
+nav {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	float: right;
+	padding-top: 22px;
+}
+
+nav ul {
+	position: absolute;
+	right: -200px;
+	flex-direction: column;
 	float: right;
 	padding-top: 20px;
+	margin-top: 80px;
 }
 
 nav ul li {
@@ -48,20 +79,27 @@ nav ul li {
 	padding: 30px;
 	text-transform: uppercase;
 	cursor: pointer;
+	color: yellow;
 }
 
 nav ul li:hover {
 	color: #fff;
 	transition: all 1s;
+	font-size: 32px;
 }
 
 @media (max-width: 500px) {
+	header {
+		flex-direction: column;
+	}
 	header .logo { 
 		float: none;
+		padding-bottom: 0px;
 	}
 	nav ul {
 		flex-direction: column;
 		float: none;
+		padding: 0px;
 	}
 	nav ul li {
 		display: flex;
@@ -74,10 +112,10 @@ nav ul li:hover {
   float: right;
   width: 60px;
   height: 40px;
-  margin: 18px;
+  margin: 32px;
+  margin-right: 100px;
   cursor: pointer;
   z-index: 5;
-  display: none;
 }
 
 .hamburger span {
@@ -124,6 +162,8 @@ nav ul li:hover {
 
 #banner_one, 
 #banner_two {
+	display: flex;
+	justify-content: center;
 	font-family: 'Ruda', Sans-Serif;
 	background: #000;
 	color: #fff;
@@ -139,31 +179,117 @@ nav ul li:hover {
 }
 
 #one {
-	background: url('../img/hand.jpeg') fixed;
+	background: url('../img/background.jpg') fixed;
 	background-size: cover;
-	height: 80vh;
+}
+
+#one .about,
+#one .about-two {
+	display: flex;
+	align-items: center;
+	padding: 50px;
+}
+
+#one .about p,
+#one .about-two p {
+	justify-content: space-around;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 20px;
+	line-height: 1.5;
+}
+
+#one .about img,
+#one .about-two img {
+	border-radius: 50%;
+	width: 100%;
+	margin: 40px;
+	border: 2px solid #000;
+}
+
+#one .about {
+	padding-bottom: 0px;
+}
+
+#one .about-two {
+	padding-top: 0px;
+}
+
+@media (max-width: 500px) {
+	#one .about,
+	#one .about-two {
+		flex-direction: column;
+		padding: 0;
+	}
+	#one .about img,
+	#one .about-two img {
+		width: 50%;
+	}
 }
 
 #two {
-	// height: 70vh;
-	background: #000;
+	display: flex;
+	background: #fff;
 	border-top: 1px solid #fff;
 }
 
 #two .left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	float: left;
-	width: 48%;
-	background: url('../img/mural.jpeg') no-repeat;
-	background-size: cover;
-	height: 70vh;
+	width: 50%;
+	// background: url('../img/mural.jpg') no-repeat;
+	// background-size: cover;
+}
+
+#two .left .episode {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	background: rgba(255, 255, 255, 0.9);
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+#two .left .episode:hover {
+	color: yellow;
+	background: rgba(0, 0, 0, 0.5);
+	border: yellow;
+	transition: all 2s;
+}
+
+#two .left .episode img {
+	width: 20%;
+	float: right;
+}
+
+#two .left .episode h1 {
+	font-size: 22px;
 }
 
 #two .right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	float: right;
 	width: 50%;
-	background: url('../img/doors.jpeg') no-repeat;
-	background-size: cover;
-	height: 70vh;
+	// background: url('../img/doors.jpeg') no-repeat;
+	// background-size: cover;	
+}
+
+#two .right h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 32px;
+}
+
+#two .right p {
+	text-align: center;
+	font-size: 28px;
 }
 
 footer {
@@ -223,4 +349,10 @@ footer .bottom {
 	text-align: center;
 	padding: 40px;
 	text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+	footer .top .top_content .content img {
+		display: none;
+	}
 }
