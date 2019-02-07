@@ -6,6 +6,11 @@ html {
 	background: rgba(0, 0, 0, 0.7);
 }
 
+body {
+	margin-right: 0;
+	transition: margin-right .3s;
+}
+
 a {
 	text-decoration: none;
 }
@@ -72,6 +77,7 @@ nav ul {
 	float: right;
 	padding-top: 20px;
 	margin-top: 80px;
+	transition: right .3s;
 }
 
 nav ul li {
@@ -247,19 +253,20 @@ nav ul li:hover {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	background: rgba(255, 255, 255, 0.9);
 	border: 1px solid #000;
 	border-radius: 5px;
 	margin: 10px;
 	cursor: pointer;
+	padding: 0 40px;
 }
 
 #two .left .episode:hover {
 	color: yellow;
 	background: rgba(0, 0, 0, 0.5);
-	border: yellow;
-	transition: all 2s;
+	border: 1px solid yellow;
+	transition: all 1s;
 }
 
 #two .left .episode img {
