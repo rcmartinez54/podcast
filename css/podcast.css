@@ -299,6 +299,57 @@ nav ul li:hover {
 	font-size: 28px;
 }
 
+#sound-wave {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+}
+
+#sound-wave .wave {
+	flex-direction: row;
+	background: yellow;
+	margin: 5px;
+	width: 4px;
+}
+
+#sound-wave .one {
+	height: 7px;
+}
+
+#sound-wave .two {
+	height: 10px;
+}
+
+#sound-wave .three {
+	height: 15px;
+}
+
+#sound-wave .four {
+	height: 17px;
+}
+
+#sound-wave .five {
+	height: 35px;
+}
+
+#sound-wave .six {
+	height: 12px;
+}
+
+#sound-wave .seven {
+	height: 28px;
+}
+
+#sound-wave .eight {
+	height: 12px;
+}
+
+#sound-wave:hover {
+	#sound-wave .five {
+		background: blue;
+	}
+}
+
 footer {
 	font-family: 'Ruda', Sans-Serif;
 	border-top: 1px solid #fff;
